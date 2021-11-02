@@ -1,0 +1,77 @@
+{
+  "watch_video": {
+    "show": 1,
+    "reward": 100,
+    "daily_max": 50,
+    "weight": 10
+  },
+  "likes2": {
+    "shuma": {
+      "apple": [
+        [
+          "apple11"
+        ],
+        [
+          "apple12"
+        ]
+      ]
+    }
+  },
+  "likes": [
+    [
+      "b","b","bigApple"
+    ]
+  ],
+  "goods": {
+    "1": {
+      "id": 1,
+      "amount": 1
+    },
+    "2": {
+      "id": 2,
+      "amount": 2
+    }
+  },
+  "abtests" : [
+    {
+      "enable": false,
+      "ab_key": "mytest_1",
+      "tests":[
+        {
+          "ab_val": "1",
+          "params": {
+            "watch_video.$delete": "",
+            "likes.0.$append": "bbbbb",
+            "likes.1": "kang",
+            "likes2.shuma.apple.0.$delete": "",
+            "goods.2.amount": 11,
+            "goods.$delete": ""
+          }
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "enable": true,
+      "version": 120,
+      "operator": "=",
+      "params":{
+        "watch_video.weight": 120,
+        "likes.0":["banana120"]
+      }
+    }
+  ],
+  "expands": [
+    {
+      "enable": true,
+      "field": "uid",
+      "operator": "=",
+      "value": "120",
+      "params":{
+        "watch_video.weight": 333,
+        "likes.0":["3333"]
+      }
+    }
+  ]
+}
