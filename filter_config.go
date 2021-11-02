@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"github.com/kangkang66/xcompare"
+	"github.com/darrenzzy/xcompare"
 )
 
 type VersionFunc func(ctx context.Context) (version int64)

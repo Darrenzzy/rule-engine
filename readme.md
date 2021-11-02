@@ -1,5 +1,5 @@
 # 安装
-> go get github.com/kangkang66/rewrite_config
+> go get github.com:Darrenzzy/rule-engine.git
 
 
 # 介绍
