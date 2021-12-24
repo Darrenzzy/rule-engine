@@ -344,7 +344,7 @@
 ```
 
 ### RewriteConfigByAbtest
-处理ab配置，传入的配置数据类型为map[string]interface{}
+处理ab配置，传入的配置数据类型为`map[string]`interface{}
 ```
     //定义一个返回指定ab key的value的回调函数
     getABValFunc := func(ctx context.Context, key string) (val string) {
@@ -373,7 +373,7 @@
 ```
 
 ### RewriteConfigByFilter
-处理version配置，传入的配置数据类型为map[string]interface{}
+处理version配置，传入的配置数据类型为`map[string]`interface{}
 ```
     //定义一个返回版本号的回调函数
     getVersionFunc := func(ctx context.Context) (version int64) {
